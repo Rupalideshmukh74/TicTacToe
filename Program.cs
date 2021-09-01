@@ -8,8 +8,11 @@ namespace TicTacToe
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to TicTacToe!");
-            InitializeBoard();
-            ChooseLetter();
+            //InitializeBoard();
+            //ChooseLetter();
+            ShowBoard();
+
+
         }
        
         static  void  InitializeBoard()
@@ -42,7 +45,29 @@ namespace TicTacToe
                 Console.WriteLine("wrong input");
             }
         }
+        private static void  ShowBoard()
 
+        {
+           
+
+            Console.WriteLine("     |     |      ");
+
+            
+
+            Console.WriteLine("_____|_____|_____ ");
+
+            Console.WriteLine("     |     |      ");
+
+           
+
+            Console.WriteLine("_____|_____|_____ ");
+
+            Console.WriteLine("     |     |      ");
+
+           
+            Console.WriteLine("     |     |      ");
+
+        }
     }
  }
 
