@@ -6,23 +6,21 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to TicTacToe!");
+            InitializeBoard();
         }
-        void CheckingPosition()
-        {
-            char[] board = InitializeBoard();
-        }
-         public char[] InitializeBoard()
+       
+        static  public void  InitializeBoard()
         {
             
             char[] board = new char[10];
 
            
-            for (int index = 1; index < board.Length; index++)
+            for (int index = 1; index < 10; index++)
             {
-                board[index] = ' ';
+                board[1] = ' ';
             }
-            return board;
+            
         }
     }
 
